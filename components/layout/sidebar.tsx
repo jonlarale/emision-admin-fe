@@ -98,7 +98,8 @@ function NavigationNameItem({
 }
 
 export default function Sidebar() {
-  const merchantName = "Starbucks";
+  // TODO: get merchant name and logofrom context provider (const Customization = useCustomization();)
+  const merchantName = "Blumonpay";
   const [activePage, setActivePage] = useState("/dashboard");
 
   const handleNavigationClick = (href: string) => {
@@ -127,7 +128,7 @@ export default function Sidebar() {
           <SheetTitle>
             <div className="flex gap-2">
               <Avatar>
-                <AvatarImage src="https://logos-download.com/wp-content/uploads/2016/03/Starbucks_Logo_1987-2048x2048.png" />
+                <AvatarImage src="/blumon_pay_logo.jpeg" />
                 <AvatarFallback>Logo</AvatarFallback>
               </Avatar>
 
