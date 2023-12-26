@@ -19,13 +19,7 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
 
-import {
-  LineChart,
-  WalletCards,
-  ArrowLeftRight,
-  Menu,
-  Landmark,
-} from "lucide-react";
+import { LineChart, Menu, Settings } from "lucide-react";
 
 interface NavigationItem {
   name: string;
@@ -38,6 +32,11 @@ const navigationItems: NavigationItem[] = [
     name: "Resumen",
     href: "/dashboard",
     icon: LineChart,
+  },
+  {
+    name: "Configuración",
+    href: "/dashboard/settings",
+    icon: Settings,
   },
 ];
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Customization } from "@/app/layout";
+import { useCustomization } from "../theme/CustomizationContext";
 import { Button as ShadcnButton } from "@/components/ui/button";
 
 interface ButtonProps {
@@ -12,7 +12,7 @@ interface ButtonProps {
 }
 
 export default function Button({ children, className }: ButtonProps) {
-  const { primaryColor, secondaryColor } = Customization;
+  const { primaryColor, secondaryColor } = useCustomization();
 
   return (
     <ShadcnButton
